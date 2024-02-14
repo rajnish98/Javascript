@@ -20,7 +20,9 @@ arr.map(function(element, index, arr){
 });
 
 
-heros.map((h) => console.log(h.toUpperCase()));
+heros.map((h) => 
+console.log(h.toUpperCase())
+);
 
 // Filter -----------------------------
 
@@ -54,5 +56,7 @@ console.log(above200);
 
 
 // findIndex
+
 // some
+
 // sort
