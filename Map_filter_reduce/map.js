@@ -4,3 +4,6 @@ function binary(arr){
 }
 const output = arr.map(binary);
 console.log(output); 
+
+
+// tricky map

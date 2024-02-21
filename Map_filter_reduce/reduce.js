@@ -33,3 +33,12 @@ function findMax(arr){
 }
 
 console.log(findMax(arr));
+
+const output1 = arr.reduce(function(acc, curr){
+  if(curr > acc){
+    acc = curr;
+  }
+  return acc;
+},0);
+
+console.log(output1);
