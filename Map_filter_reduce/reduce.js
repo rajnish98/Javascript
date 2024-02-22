@@ -42,3 +42,23 @@ const output1 = arr.reduce(function(acc, curr){
 },0);
 
 console.log(output1);
+
+
+const user = [
+  {firstName: "rajnish", lastName: "pandey", age: 28},
+  {firstName: "raj", lastName: "pandey", age: 26},
+  {firstName: "raj babu", lastName: "pandey", age: 26},
+  {firstName: "rajnikant", lastName: "pandey", age: 25},
+];
+
+const output2 = user.reduce(function(acc, curr){
+   if(acc[curr.age]){
+    acc[curr.age] = ++acc[curr.age]
+   }
+   else{
+    acc[curr.age] = 1;
+   }
+   return acc;
+}, {});
+
+console.log(output2);
