@@ -1,0 +1,3 @@
+var currentPage = () => {
+  window.print();
+}
