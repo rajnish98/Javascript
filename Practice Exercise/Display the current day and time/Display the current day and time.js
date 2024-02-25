@@ -2,7 +2,7 @@ var today = new Date();
 var day = today.getDay();
 var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday"];
 
-console.log("Today is: " + daylist[day] + ".");
+// console.log("Today is: " + daylist[day] + ".");
 
 var hour = today.getHours();
 const minute = today.getMinutes();
@@ -29,5 +29,5 @@ if (hour === 0 && prepend === 'PM') {
     }
   }
 }
-console.log("Current Time: " + hour + ":" +minute + ":" + second + prepend);
+// console.log("Current Time: " + hour + ":" +minute + ":" + second + prepend);
 document.getElementById("p1").innerHTML = daylist[day] +"."+ " " + hour +":"+ minute + ":"+ second + prepend;
