@@ -1,5 +1,5 @@
 setInterval(() => { 
-  var today = new Date();
+var today = new Date();
 var day = today.getDay();
 var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday"];
 
@@ -20,6 +20,7 @@ if (hour === 0 && prepend === 'PM') {
     hour = 12;
     prepend = 'Noon';
   }
+}
   if (hour === 0 && prepend === ' AM ') {
     if (minute === 0 && second === 0) {
       hour = 12;
@@ -29,7 +30,6 @@ if (hour === 0 && prepend === 'PM') {
       prepend = ' AM';
     }
   }
-}
 // console.log("Current Time: " + hour + ":" +minute + ":" + second + prepend);
 document.getElementById("p1").innerHTML = daylist[day] +"."+ " " + hour +":"+ minute + ":"+ second + prepend;
 
